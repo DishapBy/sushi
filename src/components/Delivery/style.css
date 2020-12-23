@@ -1,0 +1,60 @@
+.delivery {
+    margin: 51px 60px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery__search--input {
+    width: 780px;
+    height: 48px;
+    background-image: url("/src/components/Delivery/img/ic_search address.png");
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    padding-left: 40px;
+
+    border: 2px solid #A1A1A1;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A1A1A1;
+}
+
+.delivery__conditions {
+    display: flex;
+    margin-left: 52px;
+    margin-right: 28px;
+}
+
+.delivery__conditions--item {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.delivery__conditions--item p {
+    margin: 0;
+}
+
+.delivery__conditions--item svg {
+    margin-right: 14px;
+}
+
+.delivery__bonuses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delivery__bonuses--item {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px 57px 16px 34px;
+    margin-right: 12px;
+    box-shadow: -3px -3px 5px #FFFFFF, 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+

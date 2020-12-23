@@ -1,0 +1,36 @@
+.catalogSection{
+    margin: 60px;
+    width: 75%;
+}
+
+.catalogSection__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogSection__header--text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.catalogSection__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalogSection__header--filter{
+    display: flex;
+}
+.catalogSection__header--filters{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 10px;
+}
