@@ -1,8 +1,12 @@
 .footer{
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
     display: flex;
-    width: 75%;
+    width: 72%;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
+
+
 
 .footer__first{
     width: 60%;
