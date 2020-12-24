@@ -1,5 +1,4 @@
 .catalogSection{
-    margin: 60px 0 60px;
     width: 75%;
 }
 
@@ -21,10 +20,10 @@
     flex-wrap: wrap;
 }
 
-.catalogSection__header--filter{
+.catalogSection__filter{
     display: flex;
 }
-.catalogSection__header--filters{
+.catalogSection__filters{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

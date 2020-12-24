@@ -10,7 +10,7 @@ const Basket = ({goods}) => {
         setGoodsInBaskets(goods);
     }, [goods])
 
-    const resultBasket = goodsInBasket.length ? goodsInBasket.map((item, index) => {
+    const resultBasket = goodsInBasket.length || goodsInBasket.length === 0 ? goodsInBasket.map((item, index) => {
         return <GoodsItem {...item} key={index}/>
         })
         : <p style={{textAlign: 'center'}}>Корзина пуста</p>

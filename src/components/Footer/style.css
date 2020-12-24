@@ -1,5 +1,5 @@
 .footer{
-    margin: 20px 60px;
+    margin-top: 20px;
     display: flex;
     width: 75%;
 }
@@ -15,20 +15,20 @@
     padding-left: 20px;
 }
 
-.footer__second--info {
+.footer__info {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
 }
 
 .footer__contact{
     display: flex;
 }
 
-.footer__contacts__logo{
+.footer__logo{
     margin-right: 40px;
 }
 
@@ -53,21 +53,36 @@
     margin: 0;
 }
 
-.footer__details{
+.footer__details {
+    display: flex;
+    align-items: baseline;
+}
+
+.details__text{
     margin-top: 28px;
+    margin-bottom: 0;
+    margin-right: 10px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
     color: #000000;
+
 }
 
 .footer__legalAddress{
-    padding-top: 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
 
     color: #000000;
+}
+
+.footer__company{
+    margin-right: 23px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    color: #A1A1A1;
 }

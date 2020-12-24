@@ -1,6 +1,6 @@
 .catalogSectionItem {
-    width: 226px;
-    height: 340px;
+    width: 200px;
+    height: 320px;
     left: 0;
     top: 49px;
 
@@ -71,4 +71,11 @@
     border: none;
     width: 33.98px;
     height: 31.45px;
+}
+
+@media (max-width: 1300px) {
+    .catalogSectionItem{
+        width: 200px;
+        height: 300px;
+    }
 }

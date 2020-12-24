@@ -10,6 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App{
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
 .mainSection{
   display: flex;
 }

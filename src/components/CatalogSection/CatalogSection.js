@@ -15,9 +15,9 @@ const CatalogSection = (props) => {
             <div className={'catalogSection__food'}>
                 <div className={'catalogSection__header'}>
                     <p className={'catalogSection__header--text'}>Раздел подкаталога</p>
-                    <div className={'catalogSection__header--filter'}>
+                    <div className={'catalogSection__filter'}>
                         <img src="img/catalogSectionItem/filter.svg" alt=""/>
-                        <p className={'catalogSection__header--filters'}>Фильтры</p>
+                        <p className={'catalogSection__filters'}>Фильтры</p>
                     </div>
 
                 </div>

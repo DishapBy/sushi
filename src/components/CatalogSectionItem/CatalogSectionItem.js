@@ -34,8 +34,6 @@ const CatalogSectionItem = ({name, image, price, addGoodsInBasket, removeGoodsBa
                     }}
                 ></button>
             </div>
-
-            {/*<img src="img/catalogSectionItem/minus.png" alt="" />*/}
         </div>
     )
 
