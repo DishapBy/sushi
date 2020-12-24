@@ -31,5 +31,6 @@
     display: flex;
     align-items: center;
     color: #000000;
+    margin-left: 10px;
     margin-right: 10px;
 }
