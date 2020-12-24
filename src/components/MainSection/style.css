@@ -1,0 +1,8 @@
+.mainSection{
+    display: flex;
+}
+
+.basket{
+    width: 25%;
+    margin-right: 60px;
+}

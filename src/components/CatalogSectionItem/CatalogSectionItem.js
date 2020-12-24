@@ -1,11 +1,9 @@
 import React, {useState} from "react";
 import './style.css'
 
-const CatalogSectionItem = ({name, image, price}) => {
+const CatalogSectionItem = ({name, image, price, addGoodsInBasket, removeGoodsBasket}) => {
 
     const [count, setCount] = useState(0);
-
-    console.log(image)
 
     return (
         <div className={'catalogSectionItem'}>
@@ -13,9 +11,28 @@ const CatalogSectionItem = ({name, image, price}) => {
             <p className={"catalogSectionItem__name"}>{name}</p>
             <p className={'catalogSectionItem__price'}><strong>{price}</strong> за 1 порцию (1шт)</p>
             <div className={"catalogSectionItem__buttons"}>
-                <button className={'catalogSectionItem__minus'}></button>
+
+                <button
+                    className={'catalogSectionItem__minus'}
+                    onClick={() => {
+                        if (count > 0) {
+                            setCount(count - 1)
+                            let countGoods = count - 1;
+                            removeGoodsBasket({name, price, countGoods})
+                        }
+                    }}
+                ></button>
+
                 <p className={'catalogSectionItem__count'}>{count}</p>
-                <button className={'catalogSectionItem__plus'}></button>
+
+                <button
+                    className={'catalogSectionItem__plus'}
+                    onClick={() => {
+                        setCount(count + 1);
+                        let countGoods = count + 1;
+                        addGoodsInBasket({name, price, countGoods})
+                    }}
+                ></button>
             </div>
 
             {/*<img src="img/catalogSectionItem/minus.png" alt="" />*/}

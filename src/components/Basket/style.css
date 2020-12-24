@@ -1,0 +1,41 @@
+.basket{
+    margin: 60px 0;
+}
+
+.basket__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.basket__goods{
+    background: #F8F9FC;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    box-shadow: -10px -10px 10px #FFFFFF, 10px 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.basket__order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 75px 14px 96px;
+    background: #5DB300;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.basket__icon{
+    margin-right: 8px;
+}

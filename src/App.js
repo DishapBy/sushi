@@ -7,17 +7,20 @@ import Delivery from "./components/Delivery/Delivery";
 import FoodCategory from "./components/FoodCategory/FoodCategory";
 import CatalogSection from "./components/CatalogSection/CatalogSection";
 import Footer from "./components/Footer/Footer";
+import Basket from "./components/Basket/Basket";
+import MainSection from "./components/MainSection/MainSection";
 
 function App() {
+
     return (
         <div className="App">
             <BrowserRouter>
                 <Header/>
-                <Slider />
-                <Delivery />
-                <FoodCategory />
-                <CatalogSection />
-                <Footer />
+                <Slider/>
+                <Delivery/>
+                <FoodCategory/>
+                <MainSection />
+                <Footer/>
             </BrowserRouter>
         </div>
     );

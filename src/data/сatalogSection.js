@@ -29,7 +29,7 @@ export const catalogSection = [
 
     {
         id: 5,
-        name: "Нигири с тунцом маринованным",
+        name: "Нигири с тунцом опаленным",
         image: "img/catalogSectionItem/Нигири с тунцом опаленным.png",
         price: 2.90
     },
@@ -56,7 +56,7 @@ export const catalogSection = [
     },
     {
         id: 9,
-        name: "Нигири с тунцом маринованным",
+        name: "Нигири с тунцом опаленным",
         image: "img/catalogSectionItem/Нигири с тунцом опаленным.png",
         price: 2.90
     },
