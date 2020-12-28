@@ -53,3 +53,15 @@
     width: 40px;
     height: 40px;
 }
+
+@media (max-width: 1580px){
+    .goodsItem__name{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .goodsItem__sum{
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

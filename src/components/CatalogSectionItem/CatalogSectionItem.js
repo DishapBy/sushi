@@ -1,9 +1,18 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './style.css'
 
-const CatalogSectionItem = ({name, image, price, addGoodsInBasket, removeGoodsBasket}) => {
-
+const CatalogSectionItem = ({name, image, price, countInBasket, addGoodsInBasket, removeGoodsBasket}) => {
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        if(countInBasket.length) {
+            let findName = countInBasket.find(item => item.name === name);
+            if(findName !== undefined) {
+                // setFulledItem(() => findName);
+                setCount(() => findName.countGoods)
+            }
+        }
+    })
 
     return (
         <div className={'catalogSectionItem'}>

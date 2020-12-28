@@ -17,7 +17,7 @@ function App() {
                 <Slider/>
                 <Delivery/>
                 <FoodCategory/>
-                <MainSection />
+                <MainSection/>
                 <Footer/>
             </BrowserRouter>
         </div>

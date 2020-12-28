@@ -10,7 +10,7 @@ const FoodCategory = () => {
     ))
 
     return(
-        <div className={'foodCategory'}>
+        <div className={'foodCategory'} id={'foodCategory'}>
             {foodArray}
         </div>
     )

@@ -64,3 +64,23 @@
     margin-right: 10px;
 }
 
+@media (max-width: 1580px) {
+    .delivery{
+        margin: 35px 0 30px;
+    }
+
+    .delivery__search input{
+        width: 480px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .delivery__conditions{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .delivery__bonuses--item{
+        min-height: 64px;
+    }
+}

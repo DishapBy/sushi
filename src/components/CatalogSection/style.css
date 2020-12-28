@@ -22,6 +22,7 @@
 
 .catalogSection__filter{
     display: flex;
+    margin-right: 20px;
 }
 .catalogSection__filters{
     font-style: normal;

@@ -1,6 +1,16 @@
 .basket{
     margin-left: 10px;
+    /*top:0;*/
+    right: -20px;
 }
+
+.basket.fix{
+    margin-left: 10px;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+}
+
 
 .basket__title{
     font-style: normal;
@@ -38,4 +48,11 @@
 
 .basket__icon{
     margin-right: 8px;
+}
+
+@media (max-width: 1580px){
+    .basket__order{
+        font-size: 15px;
+        font-weight: 550;
+    }
 }

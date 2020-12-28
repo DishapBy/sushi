@@ -91,3 +91,42 @@
 .button__item{
     margin-left: 29px;
 }
+
+@media (max-width: 1580px){
+
+    .nav-item__text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        margin: 0 10px;
+    }
+
+    .number-phone a{
+        margin-left: 5px;
+        font-size: 14px;
+
+    }
+
+    .number-img > img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__buttons img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .header__search input{
+        width: 180px;
+        height: 30px;
+
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

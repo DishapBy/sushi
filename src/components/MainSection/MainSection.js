@@ -8,22 +8,16 @@ const MainSection = () => {
 
     const [goods, setGoods] = useState([]);
 
-
     const removeGoodsBasket = (newItem) => {
-        if(goods.length){
-            console.log('Goods', goods);
-            console.log("newItem", newItem);
-
-            let findItem = goods.find(item => item.name === newItem.name);
-
+        if(goods.length > 0){
             let newGoodsArray = goods.map(item => {
                 if(item.name === newItem.name && item.countGoods > 0){
                     item.countGoods -= 1;
                 }
                 return item;
-            })
+            });
+            newGoodsArray = newGoodsArray.filter(item => item.countGoods !== 0);
             setGoods(() => newGoodsArray)
-
         }
     }
 
@@ -32,7 +26,6 @@ const MainSection = () => {
             let findItem = goods.find(item => item.name === newItem.name);
 
             if (findItem) {
-
                 let newGoodsArray = goods.map(item => {
                     if(item.name === newItem.name){
                         item.countGoods += 1;
@@ -53,12 +46,10 @@ const MainSection = () => {
         }
     }
 
-    console.log(goods)
-
     return (
-        <div className={'mainSection'}>
-            <CatalogSection addGoodsInBasket={addGoodsInBasket} removeGoodsBasket={removeGoodsBasket}/>
-            <Basket goods={goods}/>
+        <div className={'mainSection'} id={'mainSection'}>
+            <CatalogSection goods={goods} addGoodsInBasket={addGoodsInBasket} removeGoodsBasket={removeGoodsBasket}/>
+            <Basket addGoodsInBasket={addGoodsInBasket} removeGoodsBasket={removeGoodsBasket} goods={goods}/>
         </div>
     )
 }

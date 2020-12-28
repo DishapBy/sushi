@@ -5,7 +5,7 @@ import './style.css';
 const Delivery = () => {
 
     return (
-        <div className={'delivery'}>
+        <div className={'delivery'} id={'delivery'}>
             <div className="delivery__search">
                 <input className={'delivery__input'} type="text"
                        placeholder={'Введите адрес доставки или выберите точку самовывоза'}/>

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import './style.css';
 import GoodsItem from "../GoodsItem/GoodsItem";
 
-const Basket = ({goods}) => {
+const Basket = ({goods, addGoodsInBasket, removeGoodsBasket}) => {
 
     const [goodsInBasket, setGoodsInBaskets] = useState([]);
 
@@ -11,12 +11,13 @@ const Basket = ({goods}) => {
     }, [goods])
 
     const resultBasket = goodsInBasket.length || goodsInBasket.length === 0 ? goodsInBasket.map((item, index) => {
-        return <GoodsItem {...item} key={index}/>
+
+        return <GoodsItem {...item} addGoodsInBasket={addGoodsInBasket} removeGoodsBasket={removeGoodsBasket} key={index}/>
         })
         : <p style={{textAlign: 'center'}}>Корзина пуста</p>
 
     return (
-        <div className={'basket'}>
+        <div className={'basket'} id={'basket'}>
             <p className={'basket__title'}>
                 Корзина
             </p>

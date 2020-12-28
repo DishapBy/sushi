@@ -1,13 +1,21 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {catalogSection} from '../../data/сatalogSection';
 import CatalogSectionItem from "../CatalogSectionItem/CatalogSectionItem";
 import './style.css'
-import Basket from "../Basket/Basket";
 
 const CatalogSection = (props) => {
 
+    const [countInBasket, setCountInBasket] = useState(0);
+
+    useEffect(() => {
+        if(props.goods.length){
+            setCountInBasket(props.goods)
+        }
+    }, [props.goods.length])
+
     const sectionItemsArray = catalogSection.map((item, index) => (
-        <CatalogSectionItem {...item} addGoodsInBasket={props.addGoodsInBasket} removeGoodsBasket={props.removeGoodsBasket} key={index}/>
+        <CatalogSectionItem {...item} countInBasket={countInBasket} addGoodsInBasket={props.addGoodsInBasket}
+                            removeGoodsBasket={props.removeGoodsBasket} key={index}/>
     ))
 
     return (
@@ -17,7 +25,9 @@ const CatalogSection = (props) => {
                     <p className={'catalogSection__header--text'}>Раздел подкаталога</p>
                     <div className={'catalogSection__filter'}>
                         <img src="img/catalogSectionItem/filter.svg" alt=""/>
-                        <p className={'catalogSection__filters'}>Фильтры</p>
+                        <div className={'catalogSection__filters'}>Фильтры
+
+                        </div>
                     </div>
 
                 </div>
