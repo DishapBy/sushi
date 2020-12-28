@@ -54,7 +54,7 @@
     height: 40px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 750px){
     .goodsItem{
         width: 180px;
         padding: 5px;

@@ -102,7 +102,7 @@
     color: #A1A1A1;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .footer{
         width: 100%;
         flex-wrap: wrap;
