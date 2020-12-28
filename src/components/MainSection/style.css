@@ -1,9 +1,17 @@
-.mainSection{
+.mainSection {
     display: flex;
     margin-top: 40px;
 }
 
-.basket{
+.basket {
     width: 25%;
     margin-right: 60px;
+}
+
+@media (max-width: 700px) {
+    .mainSection {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
 }

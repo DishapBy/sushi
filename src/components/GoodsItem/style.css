@@ -54,14 +54,31 @@
     height: 40px;
 }
 
-@media (max-width: 1580px){
-    .goodsItem__name{
-        font-size: 14px;
-        line-height: 19px;
+@media (max-width: 500px){
+    .goodsItem{
+        width: 180px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px auto;
     }
 
-    .goodsItem__sum{
-        font-size: 14px;
-        line-height: 19px;
+    .goodsItem__title{
+        padding: 10px;
+    }
+
+    .goodsItem__name, .goodsItem__sum{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .goodsItem__edit {
+        width: 130px;
+        justify-content: center;
+    }
+
+    .basket.fix{
+        position: relative;
     }
 }
