@@ -8,7 +8,6 @@ const CatalogSectionItem = ({name, image, price, countInBasket, addGoodsInBasket
         if(countInBasket.length) {
             let findName = countInBasket.find(item => item.name === name);
             if(findName !== undefined) {
-                // setFulledItem(() => findName);
                 setCount(() => findName.countGoods)
             }
         }
