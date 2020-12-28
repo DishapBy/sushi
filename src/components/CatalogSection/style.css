@@ -1,81 +1,92 @@
-.catalogSectionItem {
-    width: 200px;
-    height: 320px;
-    left: 0;
-    top: 49px;
+.catalogSection{
+    width: 75%;
+}
 
-    background: #FFFFFF;
-
-    border: 0.818138px solid rgba(0, 0, 0, 0.05);
-    box-sizing: border-box;
-    border-radius: 16.3628px;
-
+.catalogSection__header{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
-    margin-left: 12px;
-    margin-bottom: 12px;
-}
-
-.catalogSectionItem__image {
-    margin: 12px;
-}
-
-.catalogSectionItem__name {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13.0902px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-}
-
-.catalogSectionItem__buttons{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.catalogSectionItem__count{
-    margin: 0;
-    width: 42.53px;
-    height: 34px;
-
+.catalogSection__header--text{
     font-style: normal;
-    font-weight: 600;
-    font-size: 14.7362px;
-    line-height: 18px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.catalogSection__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalogSection__filter{
+    display: flex;
+    margin-right: 20px;
+}
+.catalogSection__filters{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.catalogSectionItem__minus{
-    background: url('/src/components/CatalogSectionItem/img/minus.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: none;
-    width: 33.98px;
-    height: 31.45px;
-}
+@media (max-width: 700px){
+    .foodCategory {
+        flex-wrap: wrap;
+    }
 
-.catalogSectionItem__plus{
-    background: url('/src/components/CatalogSectionItem/img/plus.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: none;
-    width: 33.98px;
-    height: 31.45px;
-}
+    .catalogSection__header--text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
 
-@media (max-width: 1300px) {
+    .catalogSection__filter{
+        align-items: end;
+    }
+
+    .catalogSection__filter img{
+        width: 13px;
+        height: 14px;
+    }
+
+    .catalogSection__filters{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 17px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     .catalogSectionItem{
-        width: 200px;
-        height: 300px;
+        width: 100px;
+        height: 250px;
+    }
+
+    .catalogSectionItem img{
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .catalogSectionItem__name{
+        font-weight: 550;
+        min-height: 50px;
+    }
+
+    .catalogSectionItem__price{
+        margin-bottom: 5px;
+    }
+
+
+    .catalogSectionItem__count{
+        width: 10px;
     }
 }
