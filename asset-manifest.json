@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sushi/static/css/main.c94e4447.chunk.css",
-    "main.js": "/sushi/static/js/main.6c7b12e5.chunk.js",
-    "main.js.map": "/sushi/static/js/main.6c7b12e5.chunk.js.map",
+    "main.css": "/sushi/static/css/main.0325fc0a.chunk.css",
+    "main.js": "/sushi/static/js/main.37a7cfec.chunk.js",
+    "main.js.map": "/sushi/static/js/main.37a7cfec.chunk.js.map",
     "runtime-main.js": "/sushi/static/js/runtime-main.0df5b009.js",
     "runtime-main.js.map": "/sushi/static/js/runtime-main.0df5b009.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/sushi/static/css/2.20aa2d7b.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.756904e6.chunk.js.map": "/sushi/static/js/2.756904e6.chunk.js.map",
     "index.html": "/sushi/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/sushi/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.c94e4447.chunk.css.map": "/sushi/static/css/main.c94e4447.chunk.css.map",
+    "static/css/main.0325fc0a.chunk.css.map": "/sushi/static/css/main.0325fc0a.chunk.css.map",
     "static/js/2.756904e6.chunk.js.LICENSE.txt": "/sushi/static/js/2.756904e6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0df5b009.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.756904e6.chunk.js",
-    "static/css/main.c94e4447.chunk.css",
-    "static/js/main.6c7b12e5.chunk.js"
+    "static/css/main.0325fc0a.chunk.css",
+    "static/js/main.37a7cfec.chunk.js"
   ]
 }
