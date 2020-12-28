@@ -10,13 +10,13 @@ const Slider = () => {
                 <img className={'d-block w-100'} src="img/slider/slide1.png" alt="slide1"/>
             </Carousel.Item>
 
-            {/*<Carousel.Item>*/}
-            {/*    <img className={'d-block w-100'} src="img/slider/slide1.png" alt="slide1"/>*/}
-            {/*</Carousel.Item>*/}
+            <Carousel.Item>
+                <img className={'d-block w-100'} src="img/slider/slide1.png" alt="slide1"/>
+            </Carousel.Item>
 
-            {/*<Carousel.Item>*/}
-            {/*    <img className={'d-block w-100'} src="img/slider/slide1.png" alt="slide1"/>*/}
-            {/*</Carousel.Item>*/}
+            <Carousel.Item>
+                <img className={'d-block w-100'} src="img/slider/slide1.png" alt="slide1"/>
+            </Carousel.Item>
 
         </Carousel>
     )
