@@ -11,3 +11,16 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media (max-width: 1300px) {
+    .foodCategoryItem{
+        width: 80px;
+        height: 140px;
+        margin: 0 3px;
+    }
+
+    .foodCategoryItem img {
+        width: 60px;
+        height: 60px;
+    }
+}
