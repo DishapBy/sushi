@@ -79,3 +79,29 @@
         height: 300px;
     }
 }
+
+@media (max-width: 700px){
+    .catalogSectionItem{
+        width: 100px;
+        height: 250px;
+    }
+
+    .catalogSectionItem img{
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .catalogSectionItem__name{
+        font-weight: 550;
+        min-height: 50px;
+    }
+
+    .catalogSectionItem__price{
+        margin-bottom: 5px;
+    }
+
+
+    .catalogSectionItem__count{
+        width: 10px;
+    }
+}
